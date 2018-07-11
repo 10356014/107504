@@ -1,8 +1,22 @@
 <ion-content padding>
-    <div class="header">
-      <h1>CQ2快剪專門店</h1>
-      <h2>叫號系統</h2>
+  <div class="background">
+    <div class="name">
+      Name
     </div>
 
-  </ion-content>
+    <div class="status">
+      <h1>服務店鋪：</h1>
+      <h1>狀態：</h1>
+    </div>
+
+    <div class="common">
+      <ion-grid>
+      <ion-row>
+          <ion-col class="rest" ><button ion-button (click)="rest()">休息</button></ion-col>
+          <ion-col  class="cutPass"><button ion-button (click)="cutPass()">過號剪髮</button></ion-col>
+      </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>
   

@@ -5,51 +5,70 @@
   height:100%;
   margin:0px;
 }
-.header{
-  color:#ffffff;
-  font-size:3em;
-  margin-top: 0.8em;
-  text-align:center;
+
+.background{
+  background: rgba(232,230,230,0.5);
+  border-radius: 60px;
+  height: 550px;
+}
+///----------------------
+.name{
+  font-size: 50px;
+  color: #3b3434;
+  margin-top: 60px;
+  padding-top: 40px;
   font-family: 'Noto Sans TC', sans-serif;
   font-weight:200;
 }
+.status{
+  font-size: 40px;
+  color: #3b3434;
+  margin-top: 70px;
+  margin-left: 30px;
+  text-align: left;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight:20;
+}
 
-.card{
-  margin:30px 0px;
+///----------------------
+.common{
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 90px;
+}
+.common .grid{
+  margin: auto;
+  padding: 0px;
+}
+.common .col{
+  text-align: center;
+  margin:auto;
+  width:50%;
+}
+.common .button{
+  height:120px;
   width:100%;
-  height:70%;
-  font-family: 'Noto Sans TC', sans-serif;
-  font-weight:200;
-}
-.card-header{
-  font-size:25px;
-}
-.scroll-content{
-  text-align:center;
-}
-
-.card{
-  background: rgba(232,230,230,0.7px);
-  border-radius: 10px;
-}
-.item{
-  background: rgba(232,230,230,0.6px);
-  margin:20px 0px 20px 0px;
-  color:black;
-  font-size:20px;
-  border-radius: 10px;
-}
-
-.button{
-  height:60px;
-  color: #FFFEFF;
   margin:auto;
   margin-bottom: 20px;
-  margin-top: 10px;
   font-size:25px;
-  width:30%;
   font-family: 'Noto Sans TC', sans-serif;
   font-weight:200;
   border: none;
-  border-radius: 10px;
+  float: left;
+  border-radius: 100px;
+}
+
+//---------------------
+.rest .button{
+  background-color: rgba(247, 120, 111,0.75);
+}
+.rest .button:active {
+  background-color: rgba(126, 61, 57, 0.75);
+}
+
+.cutPass .button{
+  background-color: rgba(21, 134, 246,0.75);
+}
+.cutPass .button:active {
+  background-color: rgba(15, 71, 128, 0.75);
 }
