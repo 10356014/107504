@@ -7,7 +7,7 @@
 }
 
 .background{
-  background: rgba(232,230,230,0.5);
+  background: rgba(232,230,230,0.4);
   border-radius: 60px;
   height: 550px;
 }
@@ -46,13 +46,13 @@
   width:50%;
 }
 .common .button{
-  height:120px;
-  width:100%;
-  margin:auto;
+  height: 120px;
+  width: 100%;
+  margin: auto;
   margin-bottom: 20px;
-  font-size:25px;
+  font-size: 28px;
   font-family: 'Noto Sans TC', sans-serif;
-  font-weight:200;
+  font-weight: 200;
   border: none;
   float: left;
   border-radius: 100px;
@@ -62,13 +62,16 @@
 .rest .button{
   background-color: rgba(247, 120, 111,0.75);
 }
+.rest .icon{
+  padding-left: 10px;
+}
 .rest .button:active {
   background-color: rgba(126, 61, 57, 0.75);
 }
 
 .cutPass .button{
-  background-color: rgba(21, 134, 246,0.75);
+  background-color: rgba(105, 145, 199,0.75);
 }
 .cutPass .button:active {
-  background-color: rgba(15, 71, 128, 0.75);
+  background-color: rgba(10, 42, 73, 0.75);
 }
