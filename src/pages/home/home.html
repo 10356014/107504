@@ -13,12 +13,12 @@
       <ion-list>
         <ion-item>
           <ion-label stacked>帳號</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="textInput" placeholder="請輸入帳號"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label stacked>密碼</ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input type="password" [(ngModel)]="passWordInput"  placeholder="請輸入密碼"></ion-input>
         </ion-item>
       </ion-list>
 
