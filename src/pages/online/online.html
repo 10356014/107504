@@ -1,19 +1,20 @@
-<ion-content padding>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<ion-content padding no-bounce class="no-scroll" overflow-scroll="false">
   <div class="background">
     <div class="name">
       Name
     </div>
 
     <div class="status">
-      <h1>服務店鋪：</h1>
-      <h1>狀態：</h1>
+      服務店鋪：<br>
+      狀態：<br>
     </div>
 
     <div class="common">
       <ion-grid>
       <ion-row>
-          <ion-col class="rest" ><button ion-button (click)="rest()">休息<ion-icon ios="ios-battery-charging" md="md-battery-charging"></ion-icon></button></ion-col>
-          <ion-col  class="cutPass"><button ion-button (click)="cutPass()">過號剪髮</button></ion-col>
+          <ion-col class="rest"><button ion-button (click)="rest()">休息<ion-icon ios="ios-battery-charging" md="md-battery-charging"></ion-icon></button></ion-col>
+          <ion-col class="cutPass"><button ion-button (click)="cutPass()">過號剪髮</button></ion-col>
       </ion-row>
       </ion-grid>
     </div>

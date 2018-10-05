@@ -1,0 +1,40 @@
+page-cut-pass {
+
+    @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+    .content{
+      background:linear-gradient(350deg,rgb(114, 123, 202),rgb(158, 236, 247));
+      height:100%;
+      margin:0px;
+    }
+  
+    .background{
+      background: rgba(232,230,230,0.4);
+      border-radius: 60px;
+      height: 550px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    ///----------------------
+    .name{
+      font-size: 35px;
+      color: #3b3434;
+      margin-top: 60px;
+      padding-top: 40px;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight:20;
+    }
+    .status{
+      font-size: 30px;
+      color: #3b3434;
+      margin-top: 70px;
+      margin-left: 30px;
+      text-align: left;
+      font-family: 'Noto Sans TC', sans-serif;
+
+    }
+  
+    ///----------------------
+
+    
+}

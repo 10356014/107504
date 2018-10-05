@@ -1,4 +1,5 @@
-<ion-content padding>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<ion-content padding no-bounce class="no-scroll" overflow-scroll="false">
     <div class="header">
       <h1>CQ2快剪專門店</h1>
       <h2>叫號系統</h2>
@@ -12,21 +13,20 @@
   
         <ion-item> 
           <ion-label>店鋪縣市</ion-label>
-            <ion-select [(ngModel)]='citySelect' (ionChange)="selectCity($event)" >
+            <ion-select [(ngModel)]='citySelect' (ionChange)="selectCity($event)" okText="確認" cancelText="取消" >
               <ion-option *ngFor="let item of result" value= {{item}} > {{item}} </ion-option> 
             </ion-select>     
         </ion-item>
               
         <ion-item>
           <ion-label>店鋪名稱</ion-label>
-            <ion-select [(ngModel)]="storeSelect" (ionChange)="selectStore($event)" >
+            <ion-select [(ngModel)]="storeSelect" (ionChange)="selectStore($event)" (click)="clickStore()" okText="確認" cancelText="取消" #mySelect>
               <ion-option *ngFor="let store of myCityStore" value= {{store}} > {{store}} </ion-option> 
             </ion-select>
         </ion-item>
-        
-  
+
         <button  block ion-button (click)="doConfirm()">確認</button>
-          
+        
       </ion-card-content>
     </ion-card>
   </ion-content>
