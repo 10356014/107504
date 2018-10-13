@@ -9,8 +9,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { OnlinePage } from '../pages/online/online';
-import { CutPassPage } from '../pages/cut-pass/cut-pass';
+import { CuttingOverNumPage } from '../pages/cutting-over-num/cutting-over-num';
+import { CuttingNumPage } from '../pages/cutting-num/cutting-num';
+import { IonicStorageModule } from '@ionic/storage';
+import { CheckOverNumPage } from '../pages/check-over-num/check-over-num';
 import { RestPage } from '../pages/rest/rest';
+import { CheckNumPage } from '../pages/check-num/check-num';
 
 @NgModule({
   declarations: [
@@ -18,13 +22,17 @@ import { RestPage } from '../pages/rest/rest';
     HomePage,
     LoginPage,
     OnlinePage,
-    CutPassPage,
-    RestPage
+    CheckOverNumPage,
+    RestPage,
+    CuttingOverNumPage,
+    CheckNumPage,
+    CuttingNumPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -32,8 +40,11 @@ import { RestPage } from '../pages/rest/rest';
     HomePage,
     LoginPage,
     OnlinePage,
-    CutPassPage,
-    RestPage
+    CheckOverNumPage,
+    RestPage,
+    CuttingOverNumPage,
+    CheckNumPage,
+    CuttingNumPage
   ],
   providers: [
     StatusBar,

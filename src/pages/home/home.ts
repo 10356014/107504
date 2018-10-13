@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { AlertController } from 'ionic-angular';
-import { Http, URLSearchParams, RequestOptions, Headers } from '@angular/Http';
+import { Http, URLSearchParams } from '@angular/Http';
+import { Storage } from '@ionic/storage';
 
 
 @Component({
@@ -14,9 +15,11 @@ export class HomePage {
   passWordInput:any;
   birth:any;
   b:any;
+  desName:any;
+  desNo:string;
 
-  constructor(public navCtrl: NavController, public alertCtrl: AlertController, public http:Http) {
-
+  constructor(public navCtrl: NavController, public alertCtrl: AlertController, public http:Http, private storage: Storage) {
+    localStorage.clear();
   }
 
   submit(){
@@ -26,6 +29,8 @@ export class HomePage {
       .subscribe(
         (data) => {
           this.birth=data.json()['birthday'];
+          this.desName=data.json()['desName'];
+          this.desNo=data.json()['desNo'];
           if(this.birth == null){
             let confirm = this.alertCtrl.create({
               title: '提示',
@@ -41,6 +46,9 @@ export class HomePage {
             this.b = this.birth.replace(/[^0-9]/g,'');
             if(this.passWordInput==this.b){
               this.navCtrl.push(LoginPage);
+              this.storage.set('desName', this.desName);
+              this.storage.set('desNo', this.desNo);
+              this.storage.set('desID', this.textInput);
             }else{
               let confirm = this.alertCtrl.create({
                 title: '提示',

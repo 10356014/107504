@@ -1,0 +1,89 @@
+page-check-num {
+    @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+    /*---------------------------*/
+    /* 定義內容                   */
+    /*---------------------------*/
+  
+    .ion-content { height: auto !important; }
+  
+    .content{
+        max-width:100%;
+        background:linear-gradient(350deg,rgb(114, 123, 202),rgb(158, 236, 247));
+        max-height:100%;
+        height:100%;
+        margin:0px;
+        -webkit-overflow-scrolling:none;
+    }
+    ///----------------
+    .no-scroll .scroll-content{
+        overflow: hidden;
+      }
+    .background{
+      background: rgba(232,230,230,0.4);
+      border-radius: 60px;
+      height: 520px;
+      padding-top: 20px;
+      margin-top: 30px;
+    }
+    ///----------------------
+    .title{
+      text-align: center;
+      font-size: 30px;
+      color: #3b3434;
+      margin-top: 30px;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight:200;
+    }
+    .status{
+      font-size: 23px;
+      color: #3b3434;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      text-align: left;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight:20;
+    }
+      ///----------------------
+  ///----------------------
+  .common{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+  }
+  .common .grid{
+    margin: auto;
+    padding: 0px;
+  }
+  .common .col{
+    text-align: center;
+    margin:auto;
+  }
+  .common .button{
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 200;
+    border: none;
+    float: left;
+    border-radius: 100px;
+  }
+
+  //---------------------
+  .right_btn .button{
+    background-color: rgba(243, 106, 96, 0.75);
+  }
+  .right_btn .button:active {
+    background-color: rgba(126, 61, 57, 0.75);
+  }
+
+  .left_btn .button{
+    background-color: rgba(61, 144, 253, 0.75);
+  }
+  .left_btn .button:active {
+    background-color: rgba(10, 42, 73, 0.75);
+  }
+}

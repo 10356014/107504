@@ -55,7 +55,6 @@ page-online{
   .common .col{
     text-align: center;
     margin:auto;
-    width:50%;
   }
   .common .button{
     height: 100px;
@@ -71,21 +70,21 @@ page-online{
   }
 
   //---------------------
-  .rest .button{
+  .right_btn .button{
     background-color: rgba(243, 106, 96, 0.75);
   }
-  .rest .icon{
-    padding-left: 10px;
-  }
-  .rest .button:active {
+  .right_btn .button:active {
     background-color: rgba(126, 61, 57, 0.75);
   }
 
-  .cutPass .button{
+  .left_btn .button{
     background-color: rgba(61, 144, 253, 0.75);
   }
-  .cutPass .button:active {
+  .left_btn .button:active {
     background-color: rgba(10, 42, 73, 0.75);
+  }
+  .Confirmation_Alerts .button{
+    background-color: rgba(96, 243, 128, 0);
   }
 
 }

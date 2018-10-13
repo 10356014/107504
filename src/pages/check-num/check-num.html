@@ -1,0 +1,52 @@
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<ion-content padding no-bounce class="no-scroll" overflow-scroll="false">
+  <div class="background">
+    <div class="status">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-6>
+              理髮師：
+            </ion-col>
+            <ion-col col-4>
+              陳*如
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+              剪髮號碼：
+            </ion-col>
+            <ion-col col-4>
+              15
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+              服務店鋪：
+            </ion-col>
+            <ion-col col-4>
+              北商店
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+              狀態：
+            </ion-col>
+            <ion-col col-4>
+              剪髮中
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+    <div class="title">
+      客人是否入店?
+    </div>
+    <div class="common">
+      <ion-grid>
+        <ion-row>
+            <ion-col col-5 class="right_btn"><button ion-button (click)="guest_Notarrived()">未到</button></ion-col>
+            <ion-col col-5 class="left_btn"><button ion-button (click)="guest_arrived()">已到</button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>
